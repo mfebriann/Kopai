@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website untuk membeli kopi" />
+    <meta name="keywords" content="HTML, CSS, Javascript, Coffee, Kopi, Website" />
+    <meta name="author" content="Rian" />
+    <meta name="theme-color" content="#4285f4" />
+    <title>Kopai - Kopi nikmat untuk menemani waktu santaimu.</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- CDN Icons RemixIcon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <a href="#" id="logo"><h1>Kopai</h1></a>
+      <ul class="links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#testimonial">Testimonial</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+      </ul>
+      <ul class="icons">
+        <li>
+          <a href="#" title="Keranjang" class="keranjang"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM5.5 23a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                fill="rgba(241,196,152,1)"
+              />
+            </svg>
+            <span class="jmlBarang">0</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Favorite" class="favorite">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0H24V24H0z" />
+              <path d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z" fill="rgba(254,22,106,1)" />
+            </svg>
+            <span class="jmlFavorite">0</span>
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(241,196,152,1)" />
+        </svg>
+      </div>
+      <div class="tampil-menu">
+        <p>NAVIGASI</p>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M20 20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9zm-9-7v6h2v-6h-2z" fill="rgba(96,96,96,1)" />
+          </svg>
+          <span>Home</span>
+        </a>
+        <a href="#tentang">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M21 20h2v2H1v-2h2V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v17zM8 11v2h3v-2H8zm0-4v2h3V7H8zm0 8v2h3v-2H8zm5 0v2h3v-2h-3zm0-4v2h3v-2h-3zm0-4v2h3V7h-3z" fill="rgba(96,96,96,1)" />
+          </svg>
+          <span>Tentang</span>
+        </a>
+        <a href="#menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M8 4h13v2H8V4zm-5-.5h3v3H3v-3zm0 7h3v3H3v-3zm0 7h3v3H3v-3zM8 11h13v2H8v-2zm0 7h13v2H8v-2z" fill="rgba(96,96,96,1)" />
+          </svg>
+          <span>Menu</span>
+        </a>
+        <a href="#testimonial">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M20 22H4v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2zm-8-9a6 6 0 1 1 0-12 6 6 0 0 1 0 12z" fill="rgba(96,96,96,1)" />
+          </svg>
+          <span>Testimonial</span>
+        </a>
+        <a href="#galeri">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M5 11.1l2-2 5.5 5.5 3.5-3.5 3 3V5H5v6.1zM4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm11.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="rgba(96,96,96,1)" />
+          </svg>
+          <span>Galeri</span>
+        </a>
+        <hr />
+        <p>BELANJA</p>
+        <a href="#" class="keranjang">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM5.5 23a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+              fill="rgba(241,196,152,1)"
+            />
+          </svg>
+          <span>Keranjang <span class="jmlBarang">0</span></span>
+        </a>
+        <a href="#" class="favorite">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0H24V24H0z" />
+            <path d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z" fill="rgba(254,22,106,1)" />
+          </svg>
+          <span>Favorit <span class="jmlFavorite">0</span></span>
+        </a>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <p>Secangkir kopi untuk menemani waktu istirahat mu. Ingin mencobanya?</p>
+      <a href="#menu">Pesan Sekarang</a>
+    </section>
+
+    <section id="tentang">
+      <h2 class="judul">Tentang</h2>
+
+      <div class="content">
+        <img src="assets/images/tentang-img.jpg" alt="Images Store" />
+
+        <div class="container-deskripsi">
+          <div class="deskripsi">
+            <p>
+              Warung kopi bernama <span class="bold">Kopai</span> ini sudah berdiri 10 tahun, petama kali dibuka pada tahun <span class="bold">2011</span> oleh <span class="bold">John</span>. Awal pertama dibukanya warung kopi ini di kota
+              Jakarta.
+            </p>
+            <p>
+              Pada tahun 2014 warung kopi ini mengalami peningkatan yang cukup signifikan dimana terdapat 40 cabang lainnya diseluruh penjuru Indonesia, dan untuk sekarang 2021. Warung kopi <span class="bold">Kopai</span> telah memiliki 200
+              cabang di beberapa kota di Indonesia.
+            </p>
+            <p>Warung kopi utama nya terdapat di kota Jakarta, dan terdapat 50 cabang didaerah Jakarta. Dan akan selalu nambah setiap tahunnya</p>
+            <p>Kini <span class="bold">Kopai</span> telah memiliki jargon sendiri nya, yaitu <span class="bold">Kopi nikmat untuk menemani waktu santaimu.</span> Supaya orang lebih mengenal lagi tentang produk ini.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2 class="judul">Menu</h2>
+      <div class="menu-list">
+        <a href="#" class="semua">Semua</a>
+        <a href="#">Terlaris</a>
+        <a href="#">Diskon</a>
+        <a href="#">Espresso</a>
+        <a href="#">Arabika</a>
+        <a href="#">Robusta</a>
+        <a href="#">Liberika</a>
+      </div>
+      <div class="container-cardMenu">
+        <div class="card">
+          <div class="img-card espresso">
+            <p>30% OFF</p>
+          </div>
+          <div class="deskripsi-card">
+            <h3>Kopi Espresso</h3>
+            <h3>Rp. 60.000</h3>
+            <p>Rp. 200.000</p>
+            <div class="count">
+              <div class="tambah">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="rgba(255,255,255,1)" />
+                </svg>
+              </div>
+              <h4 class="total">0</h4>
+              <div class="kurang">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M5 11h14v2H5z" fill="rgba(255,255,255,1)" />
+                </svg>
+              </div>
+            </div>
+            <div class="icons-menu">
+              <a href="#" title="Keranjang" class="keranjangCard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    fill="rgba(49,49,49,1)"
+                  />
+                </svg>
+              </a>
+              <a href="#" title="Favorite" class="favoriteCard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0H24V24H0z" />
+                  <path
+                    d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228zm6.826 1.641c-1.5-1.502-3.92-1.563-5.49-.153l-1.335 1.198-1.336-1.197c-1.575-1.412-3.99-1.35-5.494.154-1.49 1.49-1.565 3.875-.192 5.451L12 18.654l7.02-7.03c1.374-1.577 1.299-3.959-.193-5.454z"
+                    fill="rgba(254,22,106,1)"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="fill">
+                  <path fill="none" d="M0 0H24V24H0z" />
+                  <path d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z" fill="rgba(254,22,106,1)" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-card cappuccino"></div>
+          <div class="deskripsi-card">
+            <h3>Kopi Cappuccino</h3>
+            <h3>Rp. 100.000</h3>
+            <p class="hidden">0</p>
+            <div class="count">
+              <div class="tambah">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="rgba(255,255,255,1)" />
+                </svg>
+              </div>
+              <div class="total">0</div>
+              <div class="kurang">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M5 11h14v2H5z" fill="rgba(255,255,255,1)" />
+                </svg>
+              </div>
+            </div>
+            <div class="icons-menu">
+              <a href="#" title="Keranjang" class="keranjangCard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    fill="rgba(49,49,49,1)"
+                  />
+                </svg>
+              </a>
+              <a href="#" title="Favorite" class="favoriteCard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0H24V24H0z" />
+                  <path
+                    d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228zm6.826 1.641c-1.5-1.502-3.92-1.563-5.49-.153l-1.335 1.198-1.336-1.197c-1.575-1.412-3.99-1.35-5.494.154-1.49 1.49-1.565 3.875-.192 5.451L12 18.654l7.02-7.03c1.374-1.577 1.299-3.959-.193-5.454z"
+                    fill="rgba(254,22,106,1)"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="fill">
+                  <path fill="none" d="M0 0H24V24H0z" />
+                  <path d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z" fill="rgba(254,22,106,1)" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-card americano">
+            <p>60% OFF</p>
+          </div>
+          <div class="deskripsi-card">
+            <h3>Kopi Americano</h3>
+            <h3>Rp. 90.000</h3>
+            <p>Rp. 150.000</p>
+            <div class="count">
+              <div class="tambah">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="rgba(255,255,255,1)" />
+                </svg>
+              </div>
+              <div class="total">0</div>
+              <div class="kurang">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M5 11h14v2H5z" fill="rgba(255,255,255,1)" />
+                </svg>
+              </div>
+            </div>
+            <div class="icons-menu">
+              <a href="#" title="Keranjang" class="keranjangCard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    fill="rgba(49,49,49,1)"
+                  />
+                </svg>
+              </a>
+              <a href="#" title="Favorite" class="favoriteCard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0H24V24H0z" />
+                  <path
+                    d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228zm6.826 1.641c-1.5-1.502-3.92-1.563-5.49-.153l-1.335 1.198-1.336-1.197c-1.575-1.412-3.99-1.35-5.494.154-1.49 1.49-1.565 3.875-.192 5.451L12 18.654l7.02-7.03c1.374-1.577 1.299-3.959-.193-5.454z"
+                    fill="rgba(254,22,106,1)"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="fill">
+                  <path fill="none" d="M0 0H24V24H0z" />
+                  <path d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z" fill="rgba(254,22,106,1)" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonial">
+      <h2 class="judul">Apa kata mereka?</h2>
+      <div class="container-cardTesti">
+        <div class="card">
+          <div class="komentar">
+            <p>“Harganya sangat murah dan tempatnya juga cocok buat nongkrong bareng temen-temen.”</p>
+          </div>
+          <hr />
+          <div class="kontak">
+            <img src="assets/images/person/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" alt="Images Danny" />
+            <div class="person">
+              <p>Danny</p>
+              <p>Mahasiswa</p>
+              <a href="#" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                    fill="rgba(96,96,96,0.6)"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="komentar">
+            <p>“Tempat yang paling asik buat ngumpul bareng temen-temen dan juga keluarga, pokoknya seruu deh.”</p>
+          </div>
+          <hr />
+          <div class="kontak">
+            <img src="assets/images/person/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="Images Angelina" />
+            <div class="person">
+              <p>Angelina</p>
+              <p>Mahasiswa</p>
+              <a href="#" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                    fill="rgba(96,96,96,0.6)"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="komentar">
+            <p>“Varians kopi nya lengkap banget, pas buat ngisi waktu istirahat untuk bersantai sejenak, dengan minum kopi”</p>
+          </div>
+          <hr />
+          <div class="kontak">
+            <img src="assets/images/person/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg" alt="Images Jordan" />
+            <div class="person">
+              <p>Jordan</p>
+              <p>Dosen</p>
+              <a href="#" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                    fill="rgba(96,96,96,0.6)"
+                  />
+                </svg>
+              </a>
+              <a href="#" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"
+                    fill="rgba(96,96,96,0.6)"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeri">
+      <h2 class="judul">Galeri Toko</h2>
+      <div class="container-galeri">
+        <img src="assets/images/galeri-toko/1.jpg" alt="Galeri ke 1" />
+        <img src="assets/images/galeri-toko/2.jpg" alt="Galeri ke 2" />
+        <img src="assets/images/galeri-toko/3.jpg" alt="Galeri ke 3" />
+        <img src="assets/images/galeri-toko/4.jpg" alt="Galeri ke 4" />
+        <img src="assets/images/galeri-toko/5.jpg" alt="Galeri ke 5" />
+        <img src="assets/images/galeri-toko/6.jpg" alt="Galeri ke 6" />
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak kami</h2>
+      <div class="kontak-dihubungi">
+        <p>Email: <span>kopaikopi@kopai.com</span></p>
+        <p>Whatsapp: <span>081234567890</span></p>
+      </div>
+    </section>
+
+    <section id="komentar">
+      <h2 class="judul">Komentar tentang kami</h2>
+      <div class="container-komen">
+        <img src="assets/images/undraw_Texting_re_l11n.svg" alt="Images Komen" />
+        <form>
+          <label for="nama">Nama:</label>
+          <input type="text" autocomplete="off" autofocus id="nama" placeholder="Masukkan nama kamu" class="required" />
+          <span class="notifikasi">Nama tidak boleh kosong!</span>
+
+          <label for="status">Status:</label>
+          <input type="text" autocomplete="off" id="status" placeholder="Masukkan status kamu" class="required" list="listStatus" />
+          <datalist id="listStatus">
+            <option value="Sudah bekerja">Sudah bekerja</option>
+            <option value="Pelajar">Pelajar</option>
+            <option value="Mahasiswa">Mahasiswa</option>
+          </datalist>
+          <span class="notifikasi">Status tidak boleh kosong!</span>
+          <label for="sosmed">Sosial media:</label>
+          <input type="text" autocomplete="off" id="sosmed" placeholder="Masukkan sosial media kamu" list="listSosmed" />
+          <datalist id="listSosmed">
+            <option value="Instagram">Instagram</option>
+            <option value="Whatsapp">Whatsapp</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Telegram">Telegram</option>
+            <option value="LinkedIn">LinkedIn</option>
+          </datalist>
+          <label for="beriKomentar">Komentar:</label>
+          <textarea id="beriKomentar" placeholder="Berikan komentar kamu..." cols="30" rows="6" autocomplete="off" class="required"></textarea>
+          <span class="notifikasi komentar-notif">Komentar tidak boleh kosong!</span>
+          <div class="btn">
+            <button type="submit" id="kirim">Kirim</button>
+            <button type="submit" id="hapus">Hapus</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="content">
+        <div class="deskripsi-content">
+          <h2>Kopai</h2>
+          <p>Kopi nikmat untuk menemani waktu santaimu.</p>
+        </div>
+        <ul>
+          <li>
+            <a href="#" title="Github"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z"
+                  fill="rgba(255,255,255,1)"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Telegram"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3.11-8.83l.013-.007.87 2.87c.112.311.266.367.453.341.188-.025.287-.126.41-.244l1.188-1.148 2.55 1.888c.466.257.801.124.917-.432l1.657-7.822c.183-.728-.137-1.02-.702-.788l-9.733 3.76c-.664.266-.66.638-.12.803l2.497.78z"
+                  fill="rgba(255,255,255,1)"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"
+                  fill="rgba(255,255,255,1)"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p>Copyright - 2021. Kopai</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

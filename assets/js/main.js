@@ -267,16 +267,22 @@ input[2].addEventListener("input", () => {
   }
 });
 
+const sosmedInput = document.getElementById("sosmed");
 const hapus = document.getElementById("hapus");
 hapus.addEventListener("click", (e) => {
-  input.forEach((hapusItem) => {
-    if (hapusItem.value !== "") {
-      hapusItem.value = "";
-      notifikasi.forEach((tampilNotifikasiLangsung) => {
-        tampilNotifikasiLangsung.style.display = "inline";
-      });
-      document.querySelector(".komentar-notif").style.display = "block";
-    }
-  });
+  if (input[0].value == "" && input[1].value == "" && input[2].value == "" && sosmedInput.value == "") {
+    alert(`Data masih kosong, apa yang mau dihapus?`);
+  } else {
+    input.forEach((hapusItem) => {
+      if (hapusItem.value !== "" || sosmedInput.value !== "") {
+        sosmedInput.value = "";
+        hapusItem.value = "";
+        notifikasi.forEach((tampilNotifikasiLangsung) => {
+          tampilNotifikasiLangsung.style.display = "inline";
+        });
+        document.querySelector(".komentar-notif").style.display = "block";
+      }
+    });
+  }
   e.preventDefault();
 });
